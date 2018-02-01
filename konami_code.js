@@ -7,7 +7,6 @@ function init() {
   body.addEventListener('keydown', (event) => {
     const key = parseInt(event.detail || event.which)
     if (code.includes(key) && (code[idx] === key)){
-      console.log(event.which)
       idx++
       if (idx === (code.length-1)){
         alert("Code entered!")
